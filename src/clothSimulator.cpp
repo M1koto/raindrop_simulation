@@ -265,8 +265,8 @@ void ClothSimulator::drawContents() {
     //cloth->waterDrop(25, 25, -0.16);
     for (int i = 0; i < simulation_steps; i++) {
 //        cloth->rippleSpread(frames_per_sec, simulation_steps, cp);
-      //cloth->stimulate(frames_per_sec, simulation_steps, cp, external_accelerations, collision_objects, gravity.y);
-      cloth->stimulate_sine(frames_per_sec, simulation_steps, cp, external_accelerations, collision_objects, gravity.y);
+      cloth->stimulate(frames_per_sec, simulation_steps, cp, external_accelerations, collision_objects, gravity.y);
+      //cloth->stimulate_sine(frames_per_sec, simulation_steps, cp, external_accelerations, collision_objects, gravity.y);
     }
   }
 
